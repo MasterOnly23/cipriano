@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Restaurante</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav
+          class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top"
+          id="mainNav">
+          <div class="container">
+            <!-- Botón hamburguesa -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Links -->
+            <div
+              class="collapse navbar-collapse justify-content-center"
+              id="navbarNav">
+              <ul class="navbar-nav align-items-center">
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="/index.html">Inicio</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="/pages/menu.html">Menú</a>
+                </li>
+
+                <!-- Logo entre Menú y Contacto -->
+                <li class="nav-item px-3">
+                  <a class="navbar-brand" href="/">
+                    <img
+                      src="/assets/images/logoSinFondo.png"
+                      alt="Logo Restaurante Cipriano"
+                      width="80" />
+                  </a>
+                </li>
+
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a href="/pages/reservas.html" class="btn btn-reserva">
+                    Reservar Mesa
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- menu lateral -->
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+        <div class="sidebar" id="sidebar">
+          <div class="sidebar-header">
+            <button class="close-sidebar" id="closeSidebar">
+              <i class="fas fa-times"></i>
+            </button>
+            <img
+              src="/assets/images/logoSinFondo.svg"
+              alt="Logo Restaurante Cipriano"
+              width="120"
+              class="my-4" />
+          </div>
+          <div class="sidebar-content">
+            <ul class="sidebar-menu">
+              <li>
+                <a href="/index.html" class="active"
+                  ><i class="fas fa-home me-2"></i>Inicio</a
+                >
+              </li>
+              <li>
+                <a href="/pages/menu.html"><i class="fas fa-utensils me-2"></i>Menú</a>
+              </li>
+              <li>
+                <a href="/pages/contacto.html"
+                  ><i class="fas fa-envelope me-2"></i>Contacto</a
+                >
+              </li>
+              <li>
+                <a href="/pages/reservas.html"
+                  ><i class="fas fa-calendar-alt me-2"></i>Reservas</a
+                >
+              </li>
+            </ul>
+            <div class="sidebar-footer">
+              <a href="/pages/reservas.html" class="btn-reserva-sidebar">Reservar Mesa</a>
+              <div class="social-sidebar mt-4">
+                <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+    <main class="container mt-4">
+        <h1>Nuestro Menú</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Plato 1</h2>
+                <img src="../assets/images/food-items/plato1.jpg" alt="Plato 1" class="img-fluid">
+                <p>Descripción del Plato 1. Un delicioso plato que combina sabores únicos.</p>
+            </div>
+            <div class="col-md-6">
+                <h2>Plato 2</h2>
+                <img src="../assets/images/food-items/plato2.jpg" alt="Plato 2" class="img-fluid">
+                <p>Descripción del Plato 2. Una experiencia culinaria que no te puedes perder.</p>
+            </div>
+        </div>
+    </main>
+    <footer class="text-center mt-4">
+        <p>&copy; 2023 Restaurante. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        fetch('/components/header.html') // <-- AJUSTA si tienes otra ruta
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+          })
+          .catch(error => console.error('Error al cargar el header:', error));
+      </script>      
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurante Cipriano - Sabores que inspiran</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <!-- Barra de navegación fija con fondo transparente que cambia al hacer scroll -->
+        <!-- Barra de navegación fija con fondo transparente que cambia al hacer scroll -->
+        <!-- header.html -->
+        <nav
+          class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top"
+          id="mainNav">
+          <div class="container">
+            <!-- Botón hamburguesa -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Links -->
+            <div
+              class="collapse navbar-collapse justify-content-center"
+              id="navbarNav">
+              <ul class="navbar-nav align-items-center">
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="/index.html">Inicio</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="/pages/menu.html">Menú</a>
+                </li>
+
+                <!-- Logo entre Menú y Contacto -->
+                <li class="nav-item px-3">
+                  <a class="navbar-brand" href="/">
+                    <img
+                      src="/assets/images/logoSinFondo.png"
+                      alt="Logo Restaurante Cipriano"
+                      width="80" />
+                  </a>
+                </li>
+
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a href="/pages/reservas.html" class="btn btn-reserva">
+                    Reservar Mesa
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- menu lateral -->
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+        <div class="sidebar" id="sidebar">
+          <div class="sidebar-header">
+            <button class="close-sidebar" id="closeSidebar">
+              <i class="fas fa-times"></i>
+            </button>
+            <img
+              src="/assets/images/logoSinFondo.svg"
+              alt="Logo Restaurante Cipriano"
+              width="120"
+              class="my-4" />
+          </div>
+          <div class="sidebar-content">
+            <ul class="sidebar-menu">
+              <li>
+                <a href="/index.html" class="active"
+                  ><i class="fas fa-home me-2"></i>Inicio</a
+                >
+              </li>
+              <li>
+                <a href="/pages/menu.html"><i class="fas fa-utensils me-2"></i>Menú</a>
+              </li>
+              <li>
+                <a href="/pages/contacto.html"
+                  ><i class="fas fa-envelope me-2"></i>Contacto</a
+                >
+              </li>
+              <li>
+                <a href="/pages/reservas.html"
+                  ><i class="fas fa-calendar-alt me-2"></i>Reservas</a
+                >
+              </li>
+            </ul>
+            <div class="sidebar-footer">
+              <a href="/pages/reservas.html" class="btn-reserva-sidebar">Reservar Mesa</a>
+              <div class="social-sidebar mt-4">
+                <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero section mejorada -->
+        <div class="hero">
+          <div class="overlay"></div>
+          <img
+            src="assets/images/hero-image.jpg"
+            alt="Hero Image"
+            class="img-fluid" />
+          <div class="hero-content">
+            <h1>Bienvenidos a Cipriano</h1>
+            <p class="hero-subtitle">
+              Una experiencia gastronómica inolvidable
+            </p>
+            <div class="hero-buttons">
+              <a href="pages/menu.html" class="btn btn-outline-light btn-lg"
+                >Ver Menú</a
+              >
+              <a href="pages/reservas.html" class="btn btn-primary btn-lg"
+                >Reservar Mesa</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <section class="historia-section">
+            <h2><i class="fas fa-book-open me-2"></i> Nuestra Historia</h2>
+            <p>
+              Fundado en 1985, Restaurante Cipriano ha sido un referente de la
+              gastronomía local por más de tres décadas. Descubre la historia
+              detrás de nuestro restaurante y nuestra pasión por crear
+              experiencias culinarias inolvidables.
+            </p>
+            <a href="#" class="btn btn-outline-primary mt-3">Conocer más</a>
+          </section>
+        </div>
+        <div class="col-lg-6">
+          <section class="ofertas-section">
+            <h2><i class="fas fa-tag me-2"></i> Ofertas Especiales</h2>
+            <p>
+              Cada día preparamos algo único para nuestros comensales. No te
+              pierdas nuestras ofertas especiales y promociones de temporada que
+              harán tu visita aún más especial.
+            </p>
+            <div class="oferta-destacada mt-3 p-3 bg-light rounded">
+              <h4>Promoción del mes</h4>
+              <p class="mb-2">Martes de vinos: 2x1 en copas seleccionadas</p>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <section class="destacados-section mt-4">
+        <h2 class="text-center">
+          <i class="fas fa-star me-2"></i> Platos Destacados
+        </h2>
+        <div class="row mt-4">
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-body text-center">
+                <i class="fas fa-utensils fa-3x mb-3 text-primary"></i>
+                <h5>Paella Valenciana</h5>
+                <p>Nuestra especialidad mediterránea con mariscos frescos</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-body text-center">
+                <i class="fas fa-pizza-slice fa-3x mb-3 text-primary"></i>
+                <h5>Risotto de Setas</h5>
+                <p>Cremoso risotto con selección de setas silvestres</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-body text-center">
+                <i class="fas fa-bacon fa-3x mb-3 text-primary"></i>
+                <h5>Solomillo Wellington</h5>
+                <p>Tierno solomillo en hojaldre con duxelle de champiñones</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h5>Restaurante Cipriano</h5>
+            <p>Calle Principal 123<br />Ciudad, CP 28000</p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5>Horario</h5>
+            <p>
+              Lunes a Viernes: 12:00 - 23:00<br />
+              Sábados y Domingos: 13:00 - 00:00
+            </p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5>Síguenos</h5>
+            <div class="social-icons">
+              <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr class="mt-4 mb-4" />
+        <p class="text-center">
+          &copy; 2025 Restaurante Cipriano. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
