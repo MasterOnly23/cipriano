@@ -12,6 +12,13 @@
   --olive-accent: #64733b; /* Verde oliva para acentos naturales */
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
 body {
   font-family: "Montserrat", "Helvetica Neue", sans-serif;
   color: var(--text-color);
