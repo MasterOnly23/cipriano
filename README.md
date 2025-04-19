@@ -17,7 +17,7 @@ restaurante-web
 │   │   └── main.js
 │   └── images
 │       ├── logo.svg
-│       ├── hero-image.jpg
+│       ├── hero-image.png
 │       ├── food-items
 │       │   ├── plato1.jpg
 │       │   └── plato2.jpg
